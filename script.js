@@ -1,3 +1,5 @@
+
+// Calculator logic implemented using JavaScript
 let display = document.getElementById('display');
 
 function append(value) {
