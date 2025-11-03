@@ -21,3 +21,23 @@ function calculate() {
     display.value = "Error";
   }
 }
+// Commit 4: Fixed calculation error and improved validation
+function calculate() {
+  try {
+    // Prevent evaluation if display is empty
+    if (display.value.trim() === "") {
+      display.value = "";
+      return;
+    }
+
+    // Evaluate safely
+    display.value = eval(display.value);
+
+    // Limit output to 5 decimal places
+    if (display.value.includes(".")) {
+      display.value = parseFloat(display.value).toFixed(5);
+    }
+  } catch (error) {
+    display.value = "Error";
+  }
+}
