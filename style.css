@@ -7,6 +7,11 @@ body {
   align-items: center;
   height: 100vh;
 }
+/* Branch: feature-ui-update – testing color variation */
+body {
+  background-color: #f7f9fc; /* lighter tone */
+}
+
 
 .calculator {
   width: 320px;

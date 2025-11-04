@@ -8,6 +8,8 @@ function append(value) {
 function clearDisplay() {
   display.value = "";
 }
+// Branch: feature-validation-fix – verified input validation logic
+
 
 function deleteLast() {
   display.value = display.value.slice(0, -1);
